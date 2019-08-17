@@ -30,7 +30,14 @@ app.get('/about',(req,res)=>{
     title:'About',
     date: new Date().getFullYear()
   })
-})
+});
+
+app.get('/projects',(req,res)=>{
+  res.render('projects.hbs',{
+    title:'Projects',
+    date: new Date().getFullYear()
+  })
+});
 
 app.listen(port,()=>
 {
